@@ -1,0 +1,158 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "cupcake";
+  default: true;
+
+  --color-primary: #a442fe;
+  --color-primary-content: #f8f3ff;
+  --color-secondary: #eeba79;
+  --color-secondary-content: #722e14;
+  --color-accent: #80e4e4;
+  --color-accent-content: #153a37;
+  --color-neutral: #262629;
+  --color-neutral-content: #e4e4e7;
+  --color-base-100: #f8f2ed;
+  --color-base-200: #e8e1dc;
+  --color-base-300: #dad2cd;
+  --color-base-content: #291334;
+  --color-info: #238de4;
+  --color-info-content: #e2f1fd;
+  --color-success: #3db17c;
+  --color-success-content: #d8f9e6;
+  --color-warning: #e2b523;
+  --color-warning-content: #3d2009;
+  --color-error: #be2448;
+  --color-error-content: #fae4e6;
+
+  --radius-selector: 0.5rem;
+  --radius-field: 0.25rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+}
+
+/* DaisyUI Cupcake Theme - Design Tokens from Figma */
+@theme {
+  /* Color Palette */
+  --color-base-100: #f8f2ed;
+  --color-base-200: #e8e1dc;
+  --color-base-300: #dad2cd;
+  --color-base-content: #291334;
+
+  --color-primary: #a442fe;
+  --color-primary-content: #f8f3ff;
+
+  --color-secondary: #eeba79;
+  --color-secondary-content: #722e14;
+
+  --color-accent: #80e4e4;
+  --color-accent-content: #153a37;
+
+  --color-neutral: #262629;
+  --color-neutral-content: #e4e4e7;
+
+  --color-info: #238de4;
+  --color-info-content: #e2f1fd;
+
+  --color-success: #3db17c;
+  --color-success-content: #d8f9e6;
+
+  --color-warning: #e2b523;
+  --color-warning-content: #3d2009;
+
+  --color-error: #be2448;
+  --color-error-content: #fae4e6;
+
+  /* Typography */
+  --font-family-primary: var(--font-instrument-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-family-secondary: "Instrument Serif", serif;
+
+  /* Override Tailwind's default serif font */
+  --font-serif: "Instrument Serif", serif;
+}
+
+/* DaisyUI Theme Configuration */
+@layer base {
+  :root {
+    color-scheme: light;
+
+    /* Override DaisyUI border radius */
+    --rounded-box: 1rem;
+    --rounded-btn: 0.25rem;
+    --rounded-badge: 62.5rem;
+    --tab-radius: 0.5rem;
+  }
+
+  * {
+    font-family: var(--font-instrument-sans), var(--font-family-primary);
+  }
+
+  .font-sans {
+    font-family: var(--font-instrument-sans), var(--font-family-primary);
+  }
+
+  .font-serif {
+    font-family: var(--font-family-secondary);
+  }
+
+  /* Ensure Instrument Serif italic variant renders correctly */
+  .font-serif .italic,
+  .font-serif em,
+  .font-serif i {
+    font-family: var(--font-family-secondary);
+    font-style: italic;
+  }
+
+  body {
+    @apply bg-base-100 text-base-content;
+  }
+}
+
+/* Custom Utilities */
+@layer utilities {
+  /* Mobile-safe viewport height that accounts for browser UI */
+  .h-screen-mobile {
+    height: 100vh; /* Fallback for older browsers */
+    height: -webkit-fill-available; /* iOS Safari support */
+    height: 100dvh; /* Modern browsers - dynamic viewport height */
+  }
+}
+
+/* CSS Mesh Gradient - Static background for instant display */
+.css-mesh-gradient {
+  background:
+    radial-gradient(circle at 20% 30%, #a442fe 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, #e9cfff 0%, transparent 50%),
+    radial-gradient(circle at 70% 70%, #f58686 0%, transparent 50%),
+    radial-gradient(circle at 30% 80%, #fcbe7d 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, #a442fe 0%, #e9cfff 100%);
+  background-size: 200% 200%;
+  animation: mesh-shift 10s ease-in-out infinite;
+}
+
+/* CSS Gradient Animation - Smooth mesh movement */
+@keyframes mesh-shift {
+  0%, 100% {
+    background-position: 0% 50%, 100% 50%, 100% 100%, 0% 100%, 50% 50%;
+  }
+  25% {
+    background-position: 100% 0%, 100% 100%, 50% 100%, 0% 50%, 75% 25%;
+  }
+  50% {
+    background-position: 100% 100%, 0% 100%, 0% 50%, 100% 0%, 50% 75%;
+  }
+  75% {
+    background-position: 0% 100%, 0% 0%, 50% 0%, 100% 50%, 25% 50%;
+  }
+}
+
+/* Whatamesh Gradient Colors - Design System Integration */
+canvas[id^="whatamesh-canvas-"] {
+  --gradient-color-1: #a442fe; /* Primary purple */
+  --gradient-color-2: #e9cfff; /* Brighter purple */
+  --gradient-color-3: #f58686; /* Accent cyan */
+  --gradient-color-4: #fcbe7d; /* Lighter purple */
+}

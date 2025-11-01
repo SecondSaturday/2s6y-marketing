@@ -1,0 +1,30 @@
+{
+  "name": "2s6y-marketing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Marketing landing page for 2s6y - Monthly friend group newsletters",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "15.4.7",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "whatamesh": "^0.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.21",
+    "daisyui": "^5.1.25",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
