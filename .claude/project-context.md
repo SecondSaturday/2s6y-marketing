@@ -22,7 +22,7 @@ The 2s6y marketing site is a standalone Next.js static site that serves as the l
 - **No Authentication**: No Clerk, no user sessions
 - **No Database**: No Convex, no data persistence
 - **Static Export**: Builds to `/out` directory for CDN deployment
-- **basePath**: Configured for `/2s6y` subdirectory
+- **Vercel Rewrites**: Configured to serve from `/2s6y` path via vercel.json
 
 ---
 
@@ -102,13 +102,31 @@ Defined in `app/globals.css` using `@plugin "daisyui/theme"`:
 
 ```typescript
 const nextConfig = {
-  basePath: "/2s6y",           // Deployed at bykc.pro/2s6y
   output: "export",            // Static site generation
   images: {
     unoptimized: true,         // Required for static export
   },
 };
 ```
+
+### vercel.json
+
+```json
+{
+  "rewrites": [
+    {
+      "source": "/2s6y",
+      "destination": "/"
+    },
+    {
+      "source": "/2s6y/:path*",
+      "destination": "/:path*"
+    }
+  ]
+}
+```
+
+This configuration allows the site to be accessed at both the root URL and `/2s6y` path.
 
 ### postcss.config.mjs
 
@@ -137,7 +155,7 @@ npm run dev
 ```
 
 Runs on `http://localhost:3000` (or next available port)
-Access at `http://localhost:3000/2s6y` (note the basePath)
+Access at `http://localhost:3000`
 
 ### Build
 

@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/2s6y",
+      "destination": "/"
+    },
+    {
+      "source": "/2s6y/:path*",
+      "destination": "/:path*"
+    }
+  ]
+}
