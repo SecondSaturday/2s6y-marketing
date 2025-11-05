@@ -10,9 +10,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tabler/icons-react": "^3.35.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.24",
     "next": "15.4.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.3.1",
     "whatamesh": "^0.2.0"
   },
   "devDependencies": {
