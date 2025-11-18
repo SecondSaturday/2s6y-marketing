@@ -31,14 +31,18 @@ export default function AnimatedLogo({ className = "" }: AnimatedLogoProps) {
         <div
           className="absolute inset-0 flex items-center justify-center"
           style={{
-            maskImage: 'url(/2s6y/logo-mask.svg)',
+            maskImage: 'url(/logo-mask.svg)',
             maskSize: '85.9% 85.8%',
             maskPosition: 'center',
             maskRepeat: 'no-repeat',
-            WebkitMaskImage: 'url(/2s6y/logo-mask.svg)',
+            WebkitMaskImage: 'url(/logo-mask.svg)',
             WebkitMaskSize: '85.9% 85.8%',
             WebkitMaskPosition: 'center',
             WebkitMaskRepeat: 'no-repeat',
+            imageRendering: '-webkit-optimize-contrast',
+            WebkitFontSmoothing: 'antialiased',
+            backfaceVisibility: 'hidden',
+            transform: 'translateZ(0)',
           }}
         >
           <WhatameshGradient
@@ -50,7 +54,7 @@ export default function AnimatedLogo({ className = "" }: AnimatedLogoProps) {
         {/* Logo SVG with shadow/glow effects on top */}
         <div className="absolute inset-0 flex items-center justify-center">
           <Image
-            src="/2s6y/logo.svg"
+            src="/logo.svg"
             alt="2s6y Logo"
             width={760}
             height={760}

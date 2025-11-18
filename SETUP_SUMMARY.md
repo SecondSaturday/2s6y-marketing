@@ -94,9 +94,9 @@ npm run build
    - Static sign-in/sign-up buttons
 
 2. **Updated All Links**:
-   - "Get Started" → `https://2s6y.bykc.pro/sign-up`
-   - "Sign In" → `https://2s6y.bykc.pro/signin`
-   - Logo → `https://2s6y.bykc.pro`
+   - "Get Started" → `https://my.secondsaturday.app/sign-up`
+   - "Sign In" → `https://my.secondsaturday.app/signin`
+   - Logo → `https://my.secondsaturday.app`
    - All use `<a>` tags (external navigation)
 
 3. **Updated Asset Paths**:
@@ -158,12 +158,12 @@ git push -u origin main
 
 ### 5. Configure Custom Domain (Optional)
 
-If deploying to `https://bykc.pro/2s6y`:
+If deploying to `https://secondsaturday.app`:
 
 1. Vercel → Project Settings → Domains
-2. Add: `bykc.pro`
+2. Add: `secondsaturday.app`
 3. Configure DNS records
-4. Access at: `https://bykc.pro/2s6y`
+4. Access at: `https://secondsaturday.app`
 
 ## File Structure
 
@@ -215,7 +215,7 @@ Edit `app/globals.css`:
 ### Update Links
 
 Search and replace in `app/page.tsx`:
-- Find: `https://2s6y.bykc.pro`
+- Find: `https://my.secondsaturday.app`
 - Replace: `https://new-domain.com`
 
 ### Build for Production

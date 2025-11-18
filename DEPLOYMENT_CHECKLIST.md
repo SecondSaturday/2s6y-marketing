@@ -8,7 +8,7 @@ Quick reference checklist for deploying the 2s6y marketing site to production.
 
 - [ ] **Code Review**
   - [ ] All marketing copy is final
-  - [ ] All CTAs link to correct URLs (`https://2s6y.bykc.pro/*`)
+  - [ ] All CTAs link to correct URLs (`https://my.secondsaturday.app/*`)
   - [ ] Assets (logo, favicon) are optimized
   - [ ] Responsive design tested on all breakpoints
 
@@ -81,7 +81,7 @@ Quick reference checklist for deploying the 2s6y marketing site to production.
 
 - [ ] Open `https://2s6y-marketing.vercel.app/2s6y`
 - [ ] Verify page loads correctly
-- [ ] Test all CTAs (should link to `2s6y.bykc.pro`)
+- [ ] Test all CTAs (should link to `my.secondsaturday.app`)
 - [ ] Check responsive design (mobile/tablet/desktop)
 - [ ] Verify no console errors
 
@@ -92,13 +92,13 @@ Quick reference checklist for deploying the 2s6y marketing site to production.
 ### Step 1: Add Domain in Vercel
 
 - [ ] Go to Vercel project → Settings → Domains
-- [ ] Enter: `bykc.pro`
+- [ ] Enter: `secondsaturday.app`
 - [ ] Click "Add"
 - [ ] Note DNS instructions provided by Vercel
 
 ### Step 2: Configure DNS
 
-In your DNS provider (where `bykc.pro` is registered):
+In your DNS provider (where `secondsaturday.app` is registered):
 
 **Option A: CNAME (Recommended)**
 - [ ] Type: `CNAME`
@@ -126,7 +126,7 @@ In your DNS provider (where `bykc.pro` is registered):
 ### Functional Testing
 
 - [ ] **Access Production URL**
-  - [ ] `https://bykc.pro/2s6y` loads successfully
+  - [ ] `https://secondsaturday.app` loads successfully
   - [ ] SSL certificate valid (green lock icon)
   - [ ] No browser warnings
 
@@ -148,9 +148,9 @@ In your DNS provider (where `bykc.pro` is registered):
 
 ### Link Testing
 
-- [ ] **"Get Started" button** → `https://2s6y.bykc.pro/sign-up`
-- [ ] **"Sign In" button** → `https://2s6y.bykc.pro/signin`
-- [ ] **"Go to App" button** (if signed in) → `https://2s6y.bykc.pro/dashboard`
+- [ ] **"Get Started" button** → `https://my.secondsaturday.app/sign-up`
+- [ ] **"Sign In" button** → `https://my.secondsaturday.app/signin`
+- [ ] **"Go to App" button** (if signed in) → `https://my.secondsaturday.app/dashboard`
 - [ ] **Logo click** → Stays on marketing page or goes to app
 
 ### Performance Testing
@@ -240,7 +240,7 @@ git push origin main
 
 **Fix**:
 1. Verify DNS records in your DNS provider
-2. Use `dig bykc.pro` to check resolution
+2. Use `dig secondsaturday.app` to check resolution
 3. Wait up to 48 hours (usually 5-60 minutes)
 4. Contact DNS provider support
 

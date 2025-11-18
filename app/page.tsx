@@ -10,9 +10,9 @@ export default function LandingPage() {
       {/* Navigation Bar */}
       <nav className="navbar bg-base-300 border-b border-base-300 px-4 md:px-8 z-50">
         <div className="navbar-start">
-          <a href="https://2s6y.bykc.pro" className="flex items-center gap-2">
+          <a href="https://my.secondsaturday.app" className="flex items-center gap-2">
             <Image
-              src="/2s6y/favicon.svg"
+              src="/favicon.svg"
               alt="2s6y Logo"
               width={32}
               height={32}
@@ -22,10 +22,10 @@ export default function LandingPage() {
         </div>
         <div className="navbar-center"></div>
         <div className="navbar-end gap-4">
-          <a href="https://2s6y.bykc.pro/signin" className="btn btn-ghost btn-sm">
+          <a href="https://my.secondsaturday.app/signin" className="btn btn-ghost btn-sm">
             Sign In
           </a>
-          <a href="https://2s6y.bykc.pro/sign-up" className="btn btn-primary btn-sm">
+          <a href="https://my.secondsaturday.app/sign-up" className="btn btn-primary btn-sm">
             Get Started
           </a>
         </div>
@@ -52,11 +52,11 @@ export default function LandingPage() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col gap-3 w-full max-w-xs">
-            <a href="https://2s6y.bykc.pro/sign-up" className="btn btn-primary btn-lg w-full">
+            <a href="https://my.secondsaturday.app/sign-up" className="btn btn-primary btn-lg w-full">
               Get Started
             </a>
             <span>Existing users, <a
-              href="https://2s6y.bykc.pro/signin"
+              href="https://my.secondsaturday.app/signin"
               className="link link-primary text-center"
             >
               Sign In
@@ -85,11 +85,11 @@ export default function LandingPage() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col gap-4 w-full max-w-md items-center">
-            <a href="https://2s6y.bykc.pro/sign-up" className="btn btn-primary btn-lg px-12">
+            <a href="https://my.secondsaturday.app/sign-up" className="btn btn-primary btn-lg px-12">
               Get Started
             </a>
             <span>Existing users, <a
-              href="https://2s6y.bykc.pro/signin"
+              href="https://my.secondsaturday.app/signin"
               className="link link-primary text-center"
             >
               Sign In
@@ -108,16 +108,16 @@ export default function LandingPage() {
 
           <p className="text-lg text-base-content/70 leading-relaxed">
             How about a monthly ritual for sharing what matters? Write your
-            story, see theirs, stay connected without the noise.
+            story, see others&apos;, stay connected without the noise.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col gap-4 items-start">
-            <a href="https://2s6y.bykc.pro/sign-up" className="btn btn-primary btn-lg px-12">
+            <a href="https://my.secondsaturday.app/sign-up" className="btn btn-primary btn-lg px-12">
               Get Started
             </a>
             <span>Existing users, <a
-              href="https://2s6y.bykc.pro/signin"
+              href="https://my.secondsaturday.app/signin"
               className="link link-primary text-center"
             >
               Sign In

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Instrument_Sans } from "next/font/google";
+import { Instrument_Sans, Instrument_Serif } from "next/font/google";
 
 const instrumentSans = Instrument_Sans({
   subsets: ["latin"],
@@ -8,11 +8,22 @@ const instrumentSans = Instrument_Sans({
   display: "swap",
 });
 
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal", "italic"],
+  variable: "--font-instrument-serif",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "2s6y - Monthly Friend Group Newsletters",
-  description: "Remember when we actually knew what was going on in each other's lives? Share your story with monthly group newsletters.",
-  icons: {
-    icon: "/2s6y/favicon.svg",
+  description: "Stay connected with your closest friends through monthly group newsletters. Share updates, see what everyone is up to, and keep your friendships alive.",
+  keywords: ["friend groups", "newsletters", "social", "stay connected", "monthly updates"],
+  openGraph: {
+    title: "2s6y - Monthly Friend Group Newsletters",
+    description: "Stay connected with your closest friends through monthly group newsletters.",
+    type: "website",
   },
 };
 
@@ -23,12 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="cupcake">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
-      </head>
-      <body className={`${instrumentSans.variable} antialiased bg-base-300 text-base-content font-sans`}>
+      <body className={`${instrumentSans.variable} ${instrumentSerif.variable} antialiased bg-base-300 text-base-content font-sans`}>
         {children}
       </body>
     </html>

@@ -68,16 +68,20 @@
 
   /* Typography */
   --font-family-primary: var(--font-instrument-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-family-secondary: "Instrument Serif", serif;
+  --font-family-secondary: var(--font-instrument-serif), serif;
 
   /* Override Tailwind's default serif font */
-  --font-serif: "Instrument Serif", serif;
+  --font-serif: var(--font-instrument-serif), serif;
 }
 
 /* DaisyUI Theme Configuration */
 @layer base {
   :root {
     color-scheme: light;
+
+    /* Font variables - must be at :root for runtime access */
+    --font-instrument-sans: var(--font-instrument-sans);
+    --font-instrument-serif: var(--font-instrument-serif);
 
     /* Override DaisyUI border radius */
     --rounded-box: 1rem;
@@ -87,22 +91,22 @@
   }
 
   * {
-    font-family: var(--font-instrument-sans), var(--font-family-primary);
+    font-family: var(--font-instrument-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
 
   .font-sans {
-    font-family: var(--font-instrument-sans), var(--font-family-primary);
+    font-family: var(--font-instrument-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   }
 
   .font-serif {
-    font-family: var(--font-family-secondary);
+    font-family: var(--font-instrument-serif), serif !important;
   }
 
   /* Ensure Instrument Serif italic variant renders correctly */
   .font-serif .italic,
   .font-serif em,
   .font-serif i {
-    font-family: var(--font-family-secondary);
+    font-family: var(--font-instrument-serif), serif;
     font-style: italic;
   }
 
@@ -155,4 +159,21 @@ canvas[id^="whatamesh-canvas-"] {
   --gradient-color-2: #e9cfff; /* Brighter purple */
   --gradient-color-3: #f58686; /* Accent cyan */
   --gradient-color-4: #fcbe7d; /* Lighter purple */
+}
+
+/* Canvas Anti-Aliasing - High-DPI Support */
+.canvas-smooth {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Apply anti-aliasing to all Whatamesh canvases */
+canvas[id^="whatamesh-canvas-"] {
+  image-rendering: -webkit-optimize-contrast;
+  -webkit-font-smoothing: antialiased;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }

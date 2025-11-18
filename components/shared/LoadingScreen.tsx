@@ -42,7 +42,7 @@ export default function LoadingScreen({
       {/* Lightweight Logo */}
       <div className="flex flex-col items-center gap-8 w-full max-w-md px-4">
         <Image
-          src="/2s6y/favicon.svg"
+          src="/favicon.svg"
           alt="2s6y Logo"
           width={80}
           height={80}

@@ -67,12 +67,12 @@ Vercel automatically handles the basePath configuration.
 
 ### Custom Domain on Vercel
 
-To use `https://bykc.pro/2s6y`:
+To use `https://secondsaturday.app`:
 
 1. Go to Vercel project settings → Domains
-2. Add domain: `bykc.pro`
+2. Add domain: `secondsaturday.app`
 3. Follow DNS configuration steps
-4. Site will be available at: `https://bykc.pro/2s6y`
+4. Site will be available at: `https://secondsaturday.app`
 
 ## Option 2: Deploy to Custom Server
 
@@ -95,7 +95,7 @@ If hosting on your own server (e.g., Apache, Nginx):
    ```nginx
    server {
        listen 80;
-       server_name bykc.pro;
+       server_name secondsaturday.app;
        root /var/www/html;
 
        # Serve 2s6y marketing site
@@ -123,7 +123,7 @@ If hosting on your own server (e.g., Apache, Nginx):
    ```
 
 4. **Verify deployment**:
-   - Visit: `https://bykc.pro/2s6y`
+   - Visit: `https://secondsaturday.app`
    - Test all links to main app work
 
 ## Option 3: Deploy to GitHub Pages
@@ -180,7 +180,7 @@ Similar to Vercel:
 If the main app URL changes:
 
 1. Search and replace in `app/page.tsx`:
-   - Find: `https://2s6y.bykc.pro`
+   - Find: `https://my.secondsaturday.app`
    - Replace: `https://new-domain.com`
 2. Test all links work
 3. Commit and deploy
@@ -227,7 +227,7 @@ Open `http://localhost:3000/2s6y` and verify same checklist.
 
 **Cause**: Main app domain changed
 
-**Fix**: Update all URLs in `app/page.tsx` (search for `https://2s6y.bykc.pro`)
+**Fix**: Update all URLs in `app/page.tsx` (search for `https://my.secondsaturday.app`)
 
 ### Issue: ESLint warning about custom fonts
 

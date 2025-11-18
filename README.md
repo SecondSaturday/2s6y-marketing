@@ -97,7 +97,7 @@ out/
 
 ### Deploy to Custom Domain
 
-If hosting on a custom domain (e.g., `https://bykc.pro/2s6y`):
+If hosting on a custom domain (e.g., `https://secondsaturday.app`):
 
 1. Update basePath in `next.config.ts` if needed
 2. Upload `out/` directory contents to your server
@@ -145,11 +145,11 @@ All internal asset paths automatically get prefixed with `/2s6y`.
 
 All CTAs and navigation links point to the main app:
 
-- **Get Started**: `https://2s6y.bykc.pro/sign-up`
-- **Sign In**: `https://2s6y.bykc.pro/signin`
-- **Logo/Home**: `https://2s6y.bykc.pro`
+- **Get Started**: `https://my.secondsaturday.app/sign-up`
+- **Sign In**: `https://my.secondsaturday.app/signin`
+- **Logo/Home**: `https://my.secondsaturday.app`
 
-**To update URLs**: Search for `https://2s6y.bykc.pro` in `app/page.tsx` and replace with new domain.
+**To update URLs**: Search for `https://my.secondsaturday.app` in `app/page.tsx` and replace with new domain.
 
 ### Design System
 
@@ -226,7 +226,7 @@ Edit `app/globals.css` to modify:
 
 ### Updating Links
 
-Search for `https://2s6y.bykc.pro` in `app/page.tsx` and replace with new domain if app URL changes.
+Search for `https://my.secondsaturday.app` in `app/page.tsx` and replace with new domain if app URL changes.
 
 ## License
 
