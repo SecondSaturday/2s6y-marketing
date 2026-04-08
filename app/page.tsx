@@ -18,6 +18,7 @@ export default function LandingPage() {
               height={32}
               className="w-6 h-6"
             />
+            <span className="font-serif text-base font-normal">Second Saturday</span>
           </a>
         </div>
         <div className="navbar-center"></div>
