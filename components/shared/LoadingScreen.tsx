@@ -43,7 +43,7 @@ export default function LoadingScreen({
       <div className="flex flex-col items-center gap-8 w-full max-w-md px-4">
         <Image
           src="/favicon.svg"
-          alt="2s6y Logo"
+          alt="Second Saturday Logo"
           width={80}
           height={80}
           className="w-20 h-20"

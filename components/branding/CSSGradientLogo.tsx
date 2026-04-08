@@ -38,7 +38,7 @@ export default function CSSGradientLogo({
       <div className="absolute inset-0 flex items-center justify-center">
         <Image
           src="/logo.svg"
-          alt="2s6y Logo"
+          alt="Second Saturday Logo"
           width={760}
           height={760}
           className="w-full h-full"

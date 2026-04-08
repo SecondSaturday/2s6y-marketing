@@ -18,11 +18,11 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "2s6y - Monthly Friend Group Newsletters",
+  title: "Second Saturday - Monthly Friend Group Newsletters",
   description: "Stay connected with your closest friends through monthly group newsletters. Share updates, see what everyone is up to, and keep your friendships alive.",
   keywords: ["friend groups", "newsletters", "social", "stay connected", "monthly updates"],
   openGraph: {
-    title: "2s6y - Monthly Friend Group Newsletters",
+    title: "Second Saturday - Monthly Friend Group Newsletters",
     description: "Stay connected with your closest friends through monthly group newsletters.",
     type: "website",
   },

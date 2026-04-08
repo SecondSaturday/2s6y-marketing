@@ -13,7 +13,7 @@ export default function LandingPage() {
           <a href="https://my.secondsaturday.app" className="flex items-center gap-2">
             <Image
               src="/favicon.svg"
-              alt="2s6y Logo"
+              alt="Second Saturday Logo"
               width={32}
               height={32}
               className="w-6 h-6"
