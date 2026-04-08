@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Instrument_Sans, Instrument_Serif } from "next/font/google";
+import Footer from "@/components/shared/Footer";
 
 const instrumentSans = Instrument_Sans({
   subsets: ["latin"],
@@ -36,6 +37,7 @@ export default function RootLayout({
     <html lang="en" data-theme="cupcake">
       <body className={`${instrumentSans.variable} ${instrumentSerif.variable} antialiased bg-base-300 text-base-content font-sans`}>
         {children}
+        <Footer />
       </body>
     </html>
   );
