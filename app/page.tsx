@@ -23,7 +23,7 @@ export default function LandingPage() {
         </div>
         <div className="navbar-center"></div>
         <div className="navbar-end gap-4">
-          <a href="https://my.secondsaturday.app/signin" className="btn btn-ghost btn-sm">
+          <a href="https://my.secondsaturday.app/sign-in" className="btn btn-ghost btn-sm">
             Sign In
           </a>
           <a href="https://my.secondsaturday.app/sign-up" className="btn btn-primary btn-sm">
@@ -57,7 +57,7 @@ export default function LandingPage() {
               Get Started
             </a>
             <span>Existing users, <a
-              href="https://my.secondsaturday.app/signin"
+              href="https://my.secondsaturday.app/sign-in"
               className="link link-primary text-center"
             >
               Sign In
@@ -90,7 +90,7 @@ export default function LandingPage() {
               Get Started
             </a>
             <span>Existing users, <a
-              href="https://my.secondsaturday.app/signin"
+              href="https://my.secondsaturday.app/sign-in"
               className="link link-primary text-center"
             >
               Sign In
@@ -118,7 +118,7 @@ export default function LandingPage() {
               Get Started
             </a>
             <span>Existing users, <a
-              href="https://my.secondsaturday.app/signin"
+              href="https://my.secondsaturday.app/sign-in"
               className="link link-primary text-center"
             >
               Sign In

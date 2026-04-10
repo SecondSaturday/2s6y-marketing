@@ -95,7 +95,7 @@ npm run build
 
 2. **Updated All Links**:
    - "Get Started" → `https://my.secondsaturday.app/sign-up`
-   - "Sign In" → `https://my.secondsaturday.app/signin`
+   - "Sign In" → `https://my.secondsaturday.app/sign-in`
    - Logo → `https://my.secondsaturday.app`
    - All use `<a>` tags (external navigation)
 

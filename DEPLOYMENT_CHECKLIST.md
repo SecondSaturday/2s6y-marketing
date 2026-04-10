@@ -149,7 +149,7 @@ In your DNS provider (where `secondsaturday.app` is registered):
 ### Link Testing
 
 - [ ] **"Get Started" button** → `https://my.secondsaturday.app/sign-up`
-- [ ] **"Sign In" button** → `https://my.secondsaturday.app/signin`
+- [ ] **"Sign In" button** → `https://my.secondsaturday.app/sign-in`
 - [ ] **"Go to App" button** (if signed in) → `https://my.secondsaturday.app/dashboard`
 - [ ] **Logo click** → Stays on marketing page or goes to app
 

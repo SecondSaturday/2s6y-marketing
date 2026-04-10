@@ -146,7 +146,7 @@ All internal asset paths automatically get prefixed with `/2s6y`.
 All CTAs and navigation links point to the main app:
 
 - **Get Started**: `https://my.secondsaturday.app/sign-up`
-- **Sign In**: `https://my.secondsaturday.app/signin`
+- **Sign In**: `https://my.secondsaturday.app/sign-in`
 - **Logo/Home**: `https://my.secondsaturday.app`
 
 **To update URLs**: Search for `https://my.secondsaturday.app` in `app/page.tsx` and replace with new domain.
